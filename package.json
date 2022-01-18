@@ -1,0 +1,16 @@
+{
+  "name": "occuland-frontend",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ occuland-frontend",
+    "create-local": "graph create --node http://localhost:8020/ occuland-frontend",
+    "remove-local": "graph remove --node http://localhost:8020/ occuland-frontend",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 occuland-frontend"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.3",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
